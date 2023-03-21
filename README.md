@@ -26,7 +26,7 @@ Before starting, ensure you have the following installed:
 
 Your API is now running on http://localhost:3000 and exposes a /generate-wallet endpoint, which generates a new XRPL wallet address and secret each time it is accessed.
 
-##Integrating with Bubble.io
+## Integrating with Bubble.io
 
 1. Log in to your Bubble.io account and create a new app.
 2. Drag and drop a text element onto the page.
