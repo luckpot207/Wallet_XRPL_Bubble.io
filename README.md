@@ -25,3 +25,13 @@ Before starting, ensure you have the following installed:
 	```
 
 Your API is now running on http://localhost:3000 and exposes a /generate-wallet endpoint, which generates a new XRPL wallet address and secret each time it is accessed.
+
+##Integrating with Bubble.io
+
+1. Log in to your Bubble.io account and create a new app.
+2. Drag and drop a text element onto the page.
+3. In the Workflow section, create a new event triggered by a page load or any other desired event.
+4. Add an action to "Get data from an external API."
+5. Define the API by entering the Heroku app's URL and /generate-wallet endpoint.
+6. Map the returned JSON fields to the text element's content by using dynamic data.
+7. Preview your Bubble.io app to see the XRPL wallet address and secret generated each time the event is triggered.
