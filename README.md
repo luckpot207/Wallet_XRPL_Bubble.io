@@ -18,7 +18,7 @@ Before starting, ensure you have the following installed:
 	```bash
 	npm install express ripple-keypairs
 	```
-3. Create a new file app.js and add the code from the following link to it: https://gist.github.com/kantorkid/0a81325b42a33012d31096a67902d7b3
+3. Create a new file app.js and add the code from the following link to it: https://github.com/kantorkid/xrplCreateWallet/blob/master/app.js
 4. Run your app locally:
 	```bash
 	node app.js
