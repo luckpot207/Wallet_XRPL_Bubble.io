@@ -74,7 +74,7 @@ By following these steps, you should be able to create a button to generate a ne
 
 ## Cautionary Message and User Experience
 
-A googd cautionary message might look like this:
+A good cautionary message might look like this:
 
 ### Caution: Sensitive Information
 
