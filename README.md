@@ -74,13 +74,24 @@ By following these steps, you should be able to create a button to generate a ne
 
 ## Cautionary Message and User Experience
 
-1. Add a "Generate XRPL Wallet" button to your Bubble.io app.
-2. Create a popup with a cautionary message, instructing users to store their wallet address and secret safely, as they won't be able to recover them if lost. Add a "Proceed" button to this popup.
-3. In the Workflow section, create a new event triggered by the "Generate XRPL Wallet" button click. Add an action to show the cautionary message popup.
-4. Create a second popup that displays the wallet address and secret using text elements. Make sure this popup is initially hidden.
-5. In the Workflow section, create a new event triggered by the "Proceed" button click. Add an action to hide the cautionary message popup and show the second popup containing the wallet address and secret.
-6. When users click the "Generate XRPL Wallet" button, they will first see a cautionary message popup. After acknowledging the message and clicking "Proceed," they will see their newly generated XRPL wallet address and secret.
-7. Now, your Bubble.io app provides a seamless user experience for generating XRPL wallet addresses and secrets, along with a cautionary message to ensure users store their information securely.
+A googd cautionary message might look like this:
+
+### Caution: Sensitive Information
+
+
+"This popup contains your XRPL wallet address and secret. The wallet secret is a critical piece of information that allows you to access and manage your funds. Please follow these security guidelines:
+
+Backup your wallet address and secret: Write down or save your wallet address and secret in a secure location, such as pen and paper, an encrypted file or password manager. Losing your secret may result in the permanent loss of your funds.
+
+Do not share your secret: Never share your wallet secret with anyone, as it grants them access to your funds. Be cautious of phishing scams and fake websites that may attempt to steal your wallet information.
+
+Secure your devices: Ensure that your devices have up-to-date security software and strong passwords. Consider using a hardware wallet or cold storage for additional protection.
+
+Monitor your wallet: Regularly check your wallet's transactions and balance to ensure there are no unauthorized activities.
+
+By proceeding, you acknowledge the risks associated with handling wallet addresses and secrets and agree to take necessary precautions to protect your funds.""
+
+## API Security
 
 Please note that exposing wallet secrets through an API can have security implications. Make sure to secure your API to prevent unauthorized access and avoid storing the generated secrets in an unsecured manner.
 
