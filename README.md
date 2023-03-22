@@ -48,6 +48,28 @@ Your API is now running on http://localhost:3000 and exposes a /generate-wallet 
 
 ### Bubble Configuration
 
+1. Drag and drop a button element onto the page and name it “Create XRPL Wallet.”
+2. Drag and drop a popup onto the page and name it “Caution: Sensitive Information.” Include a warning message about how important it 		is to treat your wallet and secret.
+3. Add a “Continue” button to your caution popup.
+4. Create a workflow to connect your “Create XRPL Wallet” button to the Caution popup:
+	1.   Double-click the “Create XRPL Wallet” button and select the “Start/Edit Workflow” option.
+	2. Select the “Button Create XRPL Wallet Is Clicked” event.
+	3. Add an action. In the action options, navigate to element actions and click “Show.”
+	4. In the element dropdown, select your caution popup.
+5. Drag and drop a popup onto the page and name it “Popup Wallet.”
+6. Drag and drop two empty text elements onto the Popup Wallet:
+	1. Select the first text element, click “Dynamic Data” in the text edit box, and select “Get 
+		Data from External API” from the dropdown menu.
+	2. Choose your XRPL API and specify that this text box will show your wallet address.
+7. Repeat step 6 for the second text element, but specify that this box will show your wallet secret.
+8. Create a workflow to connect your “Proceed” button to show the Popup Wallet:
+	1. Double-click the “Continue” button on the Caution popup and select the “Start/Edit 
+		Workflow” option.
+	2. Select the “Button Continue Is Clicked” event.
+	3. Add an action. In the action options, navigate to element actions and click “Show.”
+	4. In the element dropdown, select your Popup Wallet.
+
+By following these steps, you should be able to create a button to generate a new XRPL wallet, add a caution popup to warn users about the sensitivity of the information, and display the generated wallet and secret key in a separate popup.
 
 
 ## Cautionary Message and User Experience
