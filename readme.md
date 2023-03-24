@@ -31,7 +31,7 @@ Before starting, ensure you have the following installed:
 	```
 6. Run your app locally:
 	```bash
-node app.js
+	node app.js
 	```
 Your API is now running on http://localhost:3000/generate-wallet and exposes a /generate-wallet endpoint, which generates a new XRPL wallet address and secret each time it is accessed. To access this endpoint, you must include an x-api-key and x-api-value header with your API key and value, respectively.
 
