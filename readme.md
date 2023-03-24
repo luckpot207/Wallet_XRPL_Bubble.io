@@ -36,6 +36,36 @@ Before starting, ensure you have the following installed:
 Your API is now running on http://localhost:3000/generate-wallet and exposes a /generate-wallet endpoint, which generates a new XRPL wallet address and secret each time it is accessed. To access this endpoint, you must include an x-api-key and x-api-value header with your API key and value, respectively.
 
 
+## Deploy API to Heroku
+1. Create a Heroku account if you don't have one already and log in to your account.
+2. Install the Heroku CLI by following the instructions on this page: https://devcenter.heroku.com/articles/heroku-cli#download-and-install.
+3. Create a new Heroku app by running the following command in your project directory:
+	```lua
+	heroku create <app-name>
+	```
+4. Replace <app-name> with the name you want to give to your Heroku app. This command will also add a new remote to your Git repository.
+5. Set the environment variables for your app on Heroku. These should be the same as the API_KEY and API_VALUE values you defined in your .env file. To set the environment variables, run the following commands:
+	```arduino
+	heroku config:set API_KEY=<your-api-key>
+	heroku config:set API_VALUE=<your-api-value>
+	```
+6. Add a Procfile to your project directory with the following contents:
+	```makefile
+	web: node app.js
+	```
+7. Commit the changes to your Git repository and push them to Heroku:
+	```sql
+	git add .
+	git commit -m "Initial commit"
+	git push heroku master
+	```
+8. Once the deployment is complete, you can open your app in a web browser with the following command:
+	```arduino
+	heroku open
+	```
+And that's it! Your API is now running on Heroku and can be accessed at the URL provided by the heroku create command.
+
+
 ## Integrating with Bubble.io
 
 ### API Configuation
