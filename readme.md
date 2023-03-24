@@ -88,12 +88,12 @@ And that's it! Your API is now running on Heroku and can be accessed at the URL 
 		```
 		x-api-key
 		```
-	The first value should be your api key.
-	2. The second key should be 
+	2. The first value should be your api key.
+	3. The second key should be 
 		```
 		x-api-value
 		```
-	The second value should be your api value.
+	4. The second value should be your api value.
 10. Initialize the call and test it.
 11. If the API returns the "xrpl_wallet_address" and "xrpl_wallet_secret" as text, save the API call.
 
