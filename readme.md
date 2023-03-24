@@ -43,23 +43,23 @@ Your API is now running on http://localhost:3000/generate-wallet and exposes a /
 	```lua
 	heroku create <app-name>
 	```
-4. Replace <app-name> with the name you want to give to your Heroku app. This command will also add a new remote to your Git repository.
-5. Set the environment variables for your app on Heroku. These should be the same as the API_KEY and API_VALUE values you defined in your .env file. To set the environment variables, run the following commands:
+	Replace <app-name> with the name you want to give to your Heroku app. This command will also add a new remote to your Git repository.
+4. Set the environment variables for your app on Heroku. These should be the same as the API_KEY and API_VALUE values you defined in your .env file. To set the environment variables, run the following commands:
 	```arduino
 	heroku config:set API_KEY=<your-api-key>
 	heroku config:set API_VALUE=<your-api-value>
 	```
-6. Add a Procfile to your project directory with the following contents:
+5. Add a Procfile to your project directory with the following contents:
 	```makefile
 	web: node app.js
 	```
-7. Commit the changes to your Git repository and push them to Heroku:
+6. Commit the changes to your Git repository and push them to Heroku:
 	```sql
 	git add .
 	git commit -m "Initial commit"
 	git push heroku master
 	```
-8. Once the deployment is complete, you can open your app in a web browser with the following command:
+7. Once the deployment is complete, you can open your app in a web browser with the following command:
 	```arduino
 	heroku open
 	```
@@ -83,17 +83,17 @@ And that's it! Your API is now running on Heroku and can be accessed at the URL 
 	hosting service if you are using one), and make sure to keep the 
 	"/generate-wallet" endpoint intact as this is where the API call will be directed 
 	to.
-9. Add two headers to put your API key and value.
-	1. The first key should be 
-		```
-		x-api-key
-		```
-	2. The first value should be your api key.
-	3. The second key should be 
-		```
-		x-api-value
-		```
-	4. The second value should be your api value.
+9. To use your API key and value, you need to add two headers to your requests. 
+	1. The first header should be named 
+	```
+	x-api-key
+	``` 
+	and its value should be your API key. 
+	2. The second header should be named 
+	```
+	x-api-value
+	```
+	and its value should be your API value. Make sure to include these headers in all requests to your API that require authentication.
 10. Initialize the call and test it.
 11. If the API returns the "xrpl_wallet_address" and "xrpl_wallet_secret" as text, save the API call.
 
