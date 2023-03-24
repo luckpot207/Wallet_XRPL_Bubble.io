@@ -129,18 +129,19 @@ A good cautionary message might look like this:
 
 ### Caution: Sensitive Information
 
+	```
+	"This popup contains your XRPL wallet address and secret. The wallet secret is a critical piece of information that allows you to access and manage your funds. Please follow these security guidelines:
 
-"This popup contains your XRPL wallet address and secret. The wallet secret is a critical piece of information that allows you to access and manage your funds. Please follow these security guidelines:
+	Backup your wallet address and secret: Write down or save your wallet address and secret in a secure location, such as pen and paper, an encrypted file or password manager. Losing your secret may result in the permanent loss of your funds.
 
-Backup your wallet address and secret: Write down or save your wallet address and secret in a secure location, such as pen and paper, an encrypted file or password manager. Losing your secret may result in the permanent loss of your funds.
+	Do not share your secret: Never share your wallet secret with anyone, as it grants them access to your funds. Be cautious of phishing scams and fake websites that may attempt to steal your wallet information.
 
-Do not share your secret: Never share your wallet secret with anyone, as it grants them access to your funds. Be cautious of phishing scams and fake websites that may attempt to steal your wallet information.
+	Secure your devices: Ensure that your devices have up-to-date security software and strong passwords. Consider using a hardware wallet or cold storage for additional protection.
 
-Secure your devices: Ensure that your devices have up-to-date security software and strong passwords. Consider using a hardware wallet or cold storage for additional protection.
+	Monitor your wallet: Regularly check your wallet's transactions and balance to ensure there are no unauthorized activities.
 
-Monitor your wallet: Regularly check your wallet's transactions and balance to ensure there are no unauthorized activities.
-
-By proceeding, you acknowledge the risks associated with handling wallet addresses and secrets and agree to take necessary precautions to protect your funds.""
+	By proceeding, you acknowledge the risks associated with handling wallet addresses and secrets and agree to take necessary precautions to protect your funds.""
+	```
 
 ## API Security
 
