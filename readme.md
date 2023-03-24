@@ -78,13 +78,24 @@ And that's it! Your API is now running on Heroku and can be accessed at the URL 
 6. Click on "Add another call" to create a new API call.
 7. Set the request type to "GET" and the data type to "JSON."
 8. Paste the following endpoint into the appropriate fields:
-	https://example-heroku-app.herokuapp.com/xrpl-wallet-generator-api
-	Replace "example-heroku-app" with the name of your own Heroku app (or another 
+	https://example-heroku-app.herokuapp.com/generate-wallet
+	1. Replace "example-heroku-app" with the name of your own Heroku app (or another 
 	hosting service if you are using one), and make sure to keep the 
-	"/xrpl-wallet-generator-api" endpoint intact as this is where the API call will be directed 
+	"/generate-wallet" endpoint intact as this is where the API call will be directed 
 	to.
-9. Initialize the call and test it.
-10. If the API returns the "xrpl_wallet_address" and "xrpl_wallet_secret" as text, save the API call.
+9. Add two headers to put your API key and value.
+	1. The first key should be 
+		```
+		x-api-key
+		```
+	The first value should be your api key.
+	2. The second key should be 
+		```
+		x-api-value
+		```
+	The second value should be your api value.
+10. Initialize the call and test it.
+11. If the API returns the "xrpl_wallet_address" and "xrpl_wallet_secret" as text, save the API call.
 
 ### Bubble Configuration
 
