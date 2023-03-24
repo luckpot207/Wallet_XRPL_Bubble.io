@@ -89,6 +89,7 @@ And that's it! Your API is now running on Heroku and can be accessed at the URL 
 	x-api-key
 	``` 
 	and its value should be your API key. 
+	
 	2. The second header should be named 
 	```
 	x-api-value
