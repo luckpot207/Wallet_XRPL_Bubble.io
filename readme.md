@@ -21,8 +21,8 @@ Before starting, ensure you have the following installed:
 3. Create a new file app.js and add the code from the following link: https://github.com/kantorkid/xrplCreateWallet/blob/master/app.js
 4. Create a new file named .env in your project directory, and add your API key and value:
 	```makefile
-API_KEY=your_api_key_here
-API_VALUE=your_api_value_here
+	API_KEY=your_api_key_here
+	API_VALUE=your_api_value_here
 	```
 5. Add .env to your .gitignore file to ensure you don't accidentally commit it to a public repository:
 	```bash
