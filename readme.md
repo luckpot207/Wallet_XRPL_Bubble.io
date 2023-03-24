@@ -68,7 +68,7 @@ And that's it! Your API is now running on Heroku and can be accessed at the URL 
 
 ## Integrating with Bubble.io
 
-### API Configuation
+### Bubble API Configuation
 
 1. Log in to your Bubble.io account and create a new app.
 2. Open the editor for your app.
